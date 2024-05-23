@@ -1,0 +1,29 @@
+-- pls dont still source
+-- пж не воруй скрипт
+-- SLK Zet TEAM https://t.me/KrutoySuslik
+local da = game:HttpGet("https://pastebin.com/raw/m7pDvGcU")
+
+if da == "working" then
+function removeMainFrames()
+    local coreGui = game:GetService("CoreGui")
+    for _, item in ipairs(coreGui:GetChildren()) do
+        if item:IsA("ScreenGui") then
+            local mainFrame = item:FindFirstChild("MainFrame")
+            if mainFrame then
+                item:Destroy()
+            end
+        end
+    end
+end
+
+removeMainFrames()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/kip1231/kra/main/sus")("SLK Zet TEAM")
+end
+if da == "update" then
+ game:GetService("StarterGui"):SetCore("SendNotification", { 
+Title = "Updating!";
+Text = "https://t.me/KrutoySuslik check clipboard";
+Icon = "rbxthumb://type=Asset&id=16807904361&w=150&h=150"})
+Duration = 100;
+setclipboard("https://t.me/KrutoySuslik")
+end
